@@ -1,0 +1,72 @@
+/* VARIABLES */
+:root {
+    --primary: #001845;
+    --secondary: #023e7d;
+    --tertiary: #001233;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.auth-left {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.theme-bg-primary {
+    background: var(--primary);
+}
+
+.theme-bg-secondary {
+    background: var(--secondary);
+}
+
+.theme-bg-tertiary {
+    background: var(--tertiary);
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+.z-index-20 {
+    z-index: 20;
+}
+
+.z-index-30 {
+    z-index: 30;
+}
+
+.z-index-40 {
+    z-index: 40;
+}
+
+.z-index-50 {
+    z-index: 50;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.table-button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.375rem;
+    background-color: var(--secondary);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.card-img-top:hover {
+    scale: 1.07;
+}
+
+h1, h2, h3, h4, h5, h6, p , a, span, button, input, label , .form-control, .btn, div, .card-title, .card-text, .card-subtitle, .card-header, .card-footer, .card-body, .card-header, .card-footer, .card-img-top, .card-img-bottom, .card-img, .card-img-overlay, .card-link, .card-group, .card-deck, .card-columns, .card, .card-header-tabs, .card-header-pills {
+    font-family: "Oswald", sans-serif !important;
+}
