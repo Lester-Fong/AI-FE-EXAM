@@ -67,6 +67,12 @@
     scale: 1.07;
 }
 
+.bg-article-thumb {
+    background: url('https://picsum.photos/1000') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
 h1, h2, h3, h4, h5, h6, p , a, span, button, input, label , .form-control, .btn, div, .card-title, .card-text, .card-subtitle, .card-header, .card-footer, .card-body, .card-header, .card-footer, .card-img-top, .card-img-bottom, .card-img, .card-img-overlay, .card-link, .card-group, .card-deck, .card-columns, .card, .card-header-tabs, .card-header-pills {
     font-family: "Oswald", sans-serif !important;
 }
