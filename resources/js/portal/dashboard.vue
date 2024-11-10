@@ -7,8 +7,8 @@
     <router-link :to="{ name: 'ArticlePage' }" class="text-primary h6">View All</router-link>
   </div>
   <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-    <div class="col">
-      <div class="card" v-for="a in for_edit_articles.slice(0, 6)">
+    <div class="col" v-for="a in for_edit_articles.slice(0, 6)">
+      <div class="card">
         <div class="card-header">
           <img :src="`/${a.image}`" class="card-img-top" alt="..." />
         </div>
@@ -34,8 +34,8 @@
     <router-link :to="{ name: 'ArticlePage' }" class="text-primary h6">View All</router-link>
   </div>
   <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-    <div class="col">
-      <div class="card" v-for="a in published_articles.slice(0, 6)">
+    <div class="col" v-for="a in published_articles.slice(0, 6)">
+      <div class="card">
         <div class="card-header">
           <img :src="`/${a.image}`" class="card-img-top" alt="..." />
         </div>

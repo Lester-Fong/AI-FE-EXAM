@@ -1,5 +1,4 @@
-const HomePage = () => import(/* webpackChunkName: "js/1001" */ "./components/homepage.vue");
-const AboutPage = () => import(/* webpackChunkName: "js/1002" */ "./components/about.vue");
+const ArticleDetail = () => import(/* webpackChunkName: "js/1001" */ "./articles/article_details.vue");
 const LoginPage = () => import(/* webpackChunkName: "js/1003" */ "./front/login.vue");
 const DashboardPage = () => import(/* webpackChunkName: "js/1004" */ "./portal/dashboard.vue");
 const CompanyPage = () => import(/* webpackChunkName: "js/1005" */ "./portal/company.vue");
@@ -8,14 +7,9 @@ const UserPage = () => import(/* webpackChunkName: "js/1007" */ "./portal/user.v
 
 const routes = [
     {
-        path: "/",
+        path: "/:link",
         name: "IndexPage",
-        component: HomePage,
-    },
-    {
-        path: "/about",
-        name: "AboutPage",
-        component: AboutPage,
+        component: ArticleDetail,
     },
     {
         path: "/login",

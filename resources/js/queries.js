@@ -13,6 +13,34 @@ let user_queries = {
         }
     }`,
 
+    front_article: `query article($link: String, $action_type: String) {
+        article(link: $link, action_type: $action_type) {
+            article_id,
+            original_id,
+            title,
+            content,
+            image,
+            link,
+            status,
+            writer {
+                user_id,
+                firstname,
+                lastname,
+            },
+            editor {
+                user_id,
+                firstname,
+                lastname,
+            },
+            date,
+            company {
+                company_id,
+                original_id,
+                name,
+            }
+        }
+    }`,
+
     user: `query ($action_type: String) {
         user(action_type: $action_type) {
             user_id

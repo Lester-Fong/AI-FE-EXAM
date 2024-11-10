@@ -107,12 +107,12 @@ export default {
           height: 120,
           toolbar: [
             ["style", ["style"]],
-            ["font", ["bold", "underline", "clear"]],
+            ["font", ["bold", "underline", "clear", "size"]],
+            ["fontsize", ["fontsize"]],
+            ["fontname", ["fontname"]],
             ["color", ["color"]],
-            ["para", ["ul", "ol", "paragraph"]],
-            ["table", ["table"]],
-            ["insert", ["link", "picture", "video"]],
-            ["view", ["fullscreen", "codeview", "help"]],
+            ["para", ["ul", "ol", "paragraph", "height"]],
+            ["view", ["codeview"]],
           ],
         });
         $("#summernote_blog").summernote("code", "");
