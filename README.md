@@ -58,7 +58,14 @@ Make sure you have the following installed:
 
     **Note:** Copy the secret key generate by the command and paste it to HelperToken.php $user_client_secret variable.
 
-6. **Run the Project Locally**
+6. **Set up Apache virtualhost on Windows** <br/>
+   **~ Kindly follow the guide in this link ~**
+
+    ```bash
+    https://stackoverflow.com/a/2658510/19356014
+    ```
+
+7. **Run the Project Locally**
     ```bash
     npm run watch
     ```
