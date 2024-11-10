@@ -22,7 +22,7 @@ class ArticleQuery extends Query
         return [
             'action_type' => ['type' => Type::string()],
             'article_id' => ['type' => Type::string()],
-            'slug' => ['type' => Type::string()],
+            'link' => ['type' => Type::string()],
             'company' => ['type' => Type::string()],
         ];
     }
@@ -40,9 +40,9 @@ class ArticleQuery extends Query
             $response  = $article_model->displayAllArticles();
         }
 
-        if ($args['action_type'] == "display_article_by_slug") {
-            $slug = $args['slug'];
-            $response = $article_model->displayArticleBySlug($slug);
+        if ($args['action_type'] == "get_article_by_link") {
+            $link = $args['link'];
+            $response[] = $article_model->displayArticleByLink($link);
         }
 
         return $response;

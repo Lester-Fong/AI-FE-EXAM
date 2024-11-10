@@ -141,19 +141,12 @@ class Article extends Eloquent
     }
 
 
-    public function displayArticleBySlug($slug)
+    public function displayArticleByLink($link)
     {
-        $article = self::where('fldArticleSlug', $slug)
+        $article = self::where('fldArticleLink', $link)->where('fldArticleStatus', 1)
             ->first();
 
-        $relatedArticles = self::where('fldCompanyID', $article->fldCompanyID)
-            ->where('fldArticleSlug', '!=', $slug) // Exclude the current article using '!='
-            ->orderBy('fldArticleDateUpdated', 'desc')
-            ->limit(3)
-            ->get();
-
-        $relatedArticles[3] = $article;
-        return $relatedArticles;
+        return $article;
     }
 
 }
