@@ -75,6 +75,7 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
+                'article' => App\GraphQL\Queries\ArticleQuery::class,
             ],
             'mutation' => [
                 'user' => App\GraphQL\Mutations\UserMutation::class,
