@@ -33,43 +33,59 @@ Make sure you have the following installed:
 
     ```bash
     git clone https://github.com/Lester-Fong/AI-FE-EXAM.git
-
     ```
 
 2. **Install packages**
-   ```bash
-    npm run watch
-    composer install 
+
+    ```bash
+     npm run watch
+     composer install
     ```
 
 3. **Create a database name publish-article**
 
 4. **migrate the tables and execute the seeders**
-   ```bash
-   php artisan migrate --seed
-   ```
+
+    ```bash
+    php artisan migrate --seed
+    ```
 
 5. **Generate Authentication key**
-   ```bash
-   php artisan passport:client --password
-   ```
+
+    ```bash
+    php artisan passport:client --password
+    ```
 
     **Note:** Copy the secret key generate by the command and paste it to HelperToken.php $user_client_secret variable.
 
 6. **Run the Project Locally**
-   ```bash
-   npm run watch
-   ```
+    ```bash
+    npm run watch
+    ```
 
-### Credentials:
+<br/><br/>
+
+### These are the **Credentials** that is generated after you seed the database:
+
 **For writer:** <br/>
-**email**: ```writer@user.com```,  <br/>
-**password**: ```Article_writer_123```  <br/>
-**For editor:**  <br/>
-**email**: ```editor@user.com```,  <br/>
-**password**: ```Article_editor_123```  <br/>
+**email**: `writer@user.com`, <br/>
+**password**: `Article_writer_123` <br/>
+**For editor:** <br/>
+**email**: `editor@user.com`, <br/>
+**password**: `Article_editor_123` <br/>
+
+<br/><br/>
+
+## Note: If you have any questions regarding setting up or running the project, you can reach out to me and I will be happy to guide you. Thanks!
+
+```bash
+   lesternielcfong22@gmail.com
+```
+
+<br/><br/>
 
 ### Acknowledgments
+
 ### This project was made possible with the following tools and technologies:
 
 **Vue3** - Frontend JavaScript framework <br/>
