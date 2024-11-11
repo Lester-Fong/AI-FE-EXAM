@@ -8,6 +8,11 @@ $dbname = "publish-article"; // change this to the name of your database
 $dbusername = "root";
 $dbpassword = "";
 
+
+// $hostname = "sql303.infinityfree.com";
+// $dbname = "if0_37685813_db_prod"; // change this to the name of your database
+// $dbusername = "if0_37685813";
+// $dbpassword = "7cixEkNmHZJwo2";
 return [
 
     /*
@@ -52,12 +57,12 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => $hostname,
+            'host' => env('DB_HOST', $hostname),
             // 'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => $dbname,
-            'username' => $dbusername,
-            'password' => $dbpassword,
+            'database' => env('DB_DATABASE', $dbname),
+            'username' => env('DB_USERNAME', $dbusername),
+            'password' => env('DB_PASSWORD', $dbpassword),
             // 'database' => env('DB_DATABASE', 'forge'),
             // 'username' => env('DB_USERNAME', 'forge'),
             // 'password' => env('DB_PASSWORD', ''),
