@@ -59,7 +59,7 @@ Make sure you have the following installed:
     **Note:** Copy the secret key generate by the command and paste it to HelperToken.php $user_client_secret variable.
 
 6. **Set up Apache virtualhost on Windows** <br/>
-   **~ Kindly follow the guide in this link ~**
+   **~ Kindly follow the guide in this link ~** <br/>
    <a href="https://stackoverflow.com/a/2658510/19356014" target="_blank">Virtual Host Setup</a>
 
 8. **Run the Project Locally**
