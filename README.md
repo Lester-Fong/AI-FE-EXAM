@@ -60,12 +60,9 @@ Make sure you have the following installed:
 
 6. **Set up Apache virtualhost on Windows** <br/>
    **~ Kindly follow the guide in this link ~**
+   <a href="https://stackoverflow.com/a/2658510/19356014" target="_blank">Virtual Host Setup</a>
 
-    ```bash
-    https://stackoverflow.com/a/2658510/19356014
-    ```
-
-7. **Run the Project Locally**
+8. **Run the Project Locally**
     ```bash
     npm run watch
     ```
